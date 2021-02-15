@@ -15,7 +15,7 @@ public class custom_order {
 	  Scanner scan = new Scanner(System.in);
 
     String fName;
-    String lName;
+    String itemOrder;
     String frostingType;
     String fillingType;
     String toppings;
@@ -28,28 +28,39 @@ public class custom_order {
 	 
     // Introduce shop and prompt user to input first name
     System.out.println("Welcome to Java's Cake & Cupcake Shop");
-
     System.out.println("We make custom cakes with our secrete cake batter!");
-
-	  
 	  
     // TEST CODE
     
     // STEP 3 INPUT YOUR NAME AND PREPARE TO VIEW MENU
-   
+    System.out.print("What is your first name? ");
+    fName = scan.nextLine();
+
+    System.out.println(fName + ", please see our MENU below: \n");
+    
 	  
       
     // TEST CODE     
     
     // STEP 4 DISPLAY MENU
-
+    System.out.println("_______________________________________________");      
+    System.out.println("        MENU         QUANTITY    BASE COST  ");
+    System.out.println("_______________________________________________"); 
+    System.out.println("        Cake             1            $15     ");
+    System.out.println("   Set of Cupcakes       6            $15     ");
+    System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _");
+    System.out.println("Frostings (vanilla, chocolate, strawberry, coco)");
+    System.out.println("Fillings (mocha, mint, lemon, caramel, vanilla)");
+    System.out.println("Toppings (sprinkles, cinnamon, cocoa, nuts)");
+    System.out.println("_______________________________________________");
 	
       
 
     // TEST CODE     
     
     // STEP 5 PROMPT USER TO ORDER
-
+    System.out.println("Do you want CUPCAKES or a CAKE?");
+    itemOrder = scan.nextLine();
   
 	  
 	  
@@ -58,7 +69,9 @@ public class custom_order {
     // TEST CODE
       
     // STEP 6 PROMPT USER TO CHOOSE FROSTING
-
+    System.out.println("what type of FROSTING do you want?");
+    System.out.println("Vanilla, Chocolate, Strawberry or Coco");
+    frostingType = scan.nextLine();
    
 	 
 	 
@@ -67,28 +80,31 @@ public class custom_order {
     //TEST CODE
       
     // STEP 7 PROMPT USER TO CHOOSE FILLING
-
-
-	  
+    System.out.println("What type of FILLING do you want? ");
+    System.out.println("Mocha, Mint, Lemon, Caramel or Raspberry");
+	  fillingType = scan.nextLine();
 	  
       
     // TEST CODE
       
     // STEP 8 PROMPT USER TO CHOOSE TOPPINGS
-
-
+    System.out.println("What type of TOPPINGS do you want? ");
+    System.out.println("Sprinkles, Cinnamon, Cocoa, Nuts");
+    toppings = scan.nextLine();
 	
       
       
     // TEST CODE
       
     // STEP 9 DISPLAY ORDER CONFIRMATION
-
-
-      
-	  
-	  
-	  
+    System.out.println();
+    System.out.println(firstName + " , your order is as follows: ");
+    System.out.println("_________________________________________");
+    System.out.println("Item Ordered: " + itemOrder);
+    System.out.println("Frosting: " + frostingType);
+    System.out.println("Filling: " + fillingType);
+    System.out.println("Toppings: " + toppings);
+    System.out.println("_________________________________________");
     
     // TEST CODE
       
