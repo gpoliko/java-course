@@ -98,7 +98,7 @@ public class custom_order {
       
     // STEP 9 DISPLAY ORDER CONFIRMATION
     System.out.println();
-    System.out.println(firstName + " , your order is as follows: ");
+    System.out.println(fName + " , your order is as follows: ");
     System.out.println("_________________________________________");
     System.out.println("Item Ordered: " + itemOrder);
     System.out.println("Frosting: " + frostingType);
@@ -109,6 +109,9 @@ public class custom_order {
     // TEST CODE
       
     // STEP 10 DISPLAY COST AND SALES TAX
-  
+    // System.out.println("The cost of your order is: $%.2f\n", cost);
+    // tax = cost * TAX_RATE;
+    // System.out.println("The tax is: $%.2f\n", tax);
+    // System.out.println("The total due is: $%.2f\n", (tax + cost));
     }   
 }
